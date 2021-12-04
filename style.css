@@ -99,3 +99,58 @@ justify-content: space-between;
     text-align: center;
     font-size: 50px;
 }
+.new-list{
+    display: flex;
+
+
+}
+.listing{
+padding-top: 100px;
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 600px;
+
+}
+.media-list{
+padding: 10px;
+margin: 10px;
+list-style: none;
+
+}
+
+.media-list a{
+color: black;
+font-size: 32px;
+text-decoration: none;
+
+}
+.more{
+text-align: center;
+font-size: 32px;
+
+}
+.more a{
+
+    color: black;
+}
+
+
+.search-container{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: center;
+    padding-top: 100px;
+
+
+}
+
+input{
+    padding: 18px 26px;
+    margin: 16px 0;
+    font-size: 26px;
+}
+input[type=text]:focus {
+    background-color: lightblue;
+  }
