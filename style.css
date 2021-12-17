@@ -5,8 +5,8 @@
     scroll-behavior: smooth;
 }
 #myDiv{
-    width: 100%;
-    height: 600px;
+width: 100%;
+height: 600px;
 background-position: center center;
 background-size: cover;
 
@@ -52,36 +52,57 @@ background-size: cover;
     text-decoration: none;
     color: #fff;
 }
-.services-container{
-    padding: 40px;
-    margin: 40px;
+/* Services Section */
 
+.title-heading {
+    text-align: center;
+    font-size: 50px;
 }
 
 .services-wrapper{
     display: flex;
+flex-direction: row;
+width: 100%;
+height: 600px;
+justify-content: center;
+align-items: center;
 
 }
 .item-list{
-    padding: 250px;
-width: 100%;
-border-radius: 4px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-
-}
-.service-item{
-
-    background-color: whitesmoke;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    padding-top: 100px;
-    width: 500px;
-    border: 1px;
-    height: 225px;
-    border-style: groove;
+    justify-content: space-around;
+
+/* display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+height: 500px; */
 }
+
+.service-item{
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 150px;
+    width: 350px;
+
+
+}
+.service-links {
+color: lightblue;
+display: flex;
+text-decoration: none;
+align-items: center;
+font-size: 32px;
+border-style: double;
+width: 100%;
+}
+
 .service-item:hover{
     transform: scale(1.075);
     transition: 0.3s ease-in;
@@ -89,19 +110,30 @@ justify-content: space-between;
 
 }
 .service-item a{
-    text-decoration: none;
-    font-size: 36px;
-    color: lightblue;
+padding-left: 1rem;
 
 }
 
-.title-heading {
-    text-align: center;
-    font-size: 50px;
+@media screen and (max-width: 768px) {
+    .item-list{
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+
+    }
+    .service-item{
+
+display: flex;
+width: 100%;
+
+
+    }
 }
+
+/* Media Section */
+
 .new-list{
     display: flex;
-
 
 }
 .listing{
@@ -159,3 +191,22 @@ background-color: lightblue;
 color: #fff;
 cursor: pointer;
   }
+
+  /* Footer Section */
+.contacts{
+    background-color: darkgrey;
+    font-size: 28px;
+    padding: 30px;
+text-align: center;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.
