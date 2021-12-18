@@ -1,4 +1,5 @@
 
+// Images for navbar
 chageBackgroundImageRandomly()
 function chageBackgroundImageRandomly() {
     // 3 image
@@ -15,3 +16,14 @@ function chageBackgroundImageRandomly() {
     myDiv.style.backgroundImage = "url('" + allImage[randomIndex] + "')"
 }
 setInterval(chageBackgroundImageRandomly, 2000);
+
+// Mobile Menu
+const menu = document.querySelector('#mobile-menu')
+const menuLinks = document.querySelector('.navbar_menu')
+
+// Display Mobile Menu
+const mobileMenu = () => {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+}
+menu.addEventListener('click', mobileMenu);

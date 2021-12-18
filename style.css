@@ -81,7 +81,10 @@ top: 2rem;
     }
 .navbar_menu.active {
     background: lightblue;
-    top: 100%;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
@@ -115,6 +118,14 @@ top: 2rem;
 display: block;
 cursor: pointer;
 }
+#mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+#mobile-menu.is-active .bar:nth-child(1) {
+    transform: translate(8px) rotate(45deg);
+}
+#mobile-menu.is-active .bar:nth-child(3) {
+    transform: translate(-8px) rotate(-45deg);
 }
 
 /* Services Section */
