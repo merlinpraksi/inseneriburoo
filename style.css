@@ -22,7 +22,7 @@ background-size: cover;
     width: 450px;
     height: 600px;
     position: absolute;
-    left: 30vw;
+    left: 40vw;
 
 }
 .navbar_container {
@@ -127,19 +127,21 @@ cursor: pointer;
 #mobile-menu.is-active .bar:nth-child(3) {
     transform: translate(-8px) rotate(-45deg);
 }
-
+}
 /* Services Section */
 
 .title-heading {
+
     text-align: center;
     font-size: 50px;
+    padding-top: 3rem;
 }
 
 .services-wrapper{
     display: flex;
 flex-direction: row;
 width: 100%;
-height: 600px;
+height: 500px;
 justify-content: center;
 align-items: center;
 
@@ -230,7 +232,7 @@ text-decoration: none;
 }
 .more{
 text-align: center;
-font-size: 32px;
+font-size: 2rem;
 
 }
 .more a{
@@ -252,7 +254,7 @@ font-size: 32px;
 input{
     padding: 18px 26px;
     margin: 16px 0;
-    font-size: 26px;
+    font-size: 1.5rem;
 }
 input[type=text]:focus {
     background-color: lightblue;
@@ -262,6 +264,8 @@ background-color: lightblue;
 color: #fff;
 cursor: pointer;
   }
+
+
 
   /* Footer Section */
 .contacts{
