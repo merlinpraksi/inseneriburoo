@@ -22,7 +22,7 @@ background-size: cover;
     width: 450px;
     height: 600px;
     position: absolute;
-    left: 900px;
+    left: 30vw;
 
 }
 .navbar_container {
@@ -52,6 +52,71 @@ background-size: cover;
     text-decoration: none;
     color: #fff;
 }
+@media screen and (max-width: 960px) {
+    .navbar{
+position: initial;
+display: flex;
+flex-direction: row;
+height: 15vh;
+float: left;
+width: 100%;
+    }
+#navbar_logo {
+font-size: 1.5rem;
+position: absolute;
+left: 1rem;
+top: 2rem;
+
+
+}
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+.navbar_menu.active {
+    background: lightblue;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 60vh;;
+    font-size: 1.6rem;
+}
+/* Hamburger menu */
+.navbar_toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+.navbar_item {
+    width: 100%;
+}
+.navbar_links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+}
+#mobile-menu {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transform: translate(5%, 20%);
+}
+.navbar_toggle .bar {
+display: block;
+cursor: pointer;
+}
+}
+
 /* Services Section */
 
 .title-heading {
@@ -74,11 +139,6 @@ align-items: center;
     flex-direction: row;
     justify-content: center;
     justify-content: space-around;
-
-/* display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-height: 500px; */
 }
 
 .service-item{
